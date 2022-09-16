@@ -1,0 +1,31 @@
+$rubik:"Rubik", sans-serif;
+$white: #fff;
+$black: #000;
+$orange: #FCB500;
+$wrap:1600px;
+$container: 1280px;
+$mc: 0 auto;
+
+
+@mixin flex($jc,$ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+body{
+    background: $black;
+    font-family: $rubik;   
+}
+
+.wrapper{
+    max-width: $wrap;
+    margin: $mc;
+    padding: 0 80px;
+}
+
+.container{
+    max-width: $container;
+    margin: $mc;
+}
